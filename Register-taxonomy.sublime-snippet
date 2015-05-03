@@ -50,7 +50,7 @@ function ${1:my_taxonomies_name}() {
 add_action( 'init', '${1:my_taxonomies_name}' );
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>register_taxonomy</tabTrigger>
+	<tabTrigger>registertaxonomy</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
  	<scope>source.php - variable.other.php</scope>
 	 <!-- Optional: Description to show in the menu -->

@@ -13,6 +13,6 @@ Tags: ${7:one, two}
 $0
 ]]></content>
 	<description>Theme Head</description>
-	<tabTrigger>theme_head</tabTrigger>
+	<tabTrigger>themehead</tabTrigger>
 	<scope>source.css</scope>
 </snippet>

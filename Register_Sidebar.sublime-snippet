@@ -19,7 +19,7 @@
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>register_sidebar</tabTrigger>
+	<tabTrigger>registersidebar</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.php - variable.other.php</scope>
 	<description>register_sidebar All Options</description>
