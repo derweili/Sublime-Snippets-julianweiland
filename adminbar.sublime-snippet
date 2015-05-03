@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+//Werkzeuglseite
+add_action( 'admin_bar_menu', 'remove_wp_nodes', 999 );
+
+function remove_wp_nodes()
+{
+    global $wp_admin_bar;  
+    $wp_admin_bar->remove_node( 'wp-logo' ); // Entfernt das WordPress-Logo
+    //$wp_admin_bar->remove_node( 'site-name' ); // Entfernt den Namen der Seite
+    $wp_admin_bar->remove_node( 'comments' ); // Entferne den Abschnitt "Kommentare"
+    //$wp_admin_bar->remove_node( 'new-content' ); // Entfernt den Abschnitt "Neu"
+
+    // Es ist auch möglich die Unterpunkte des Abschnitts "Neu" einzeln zu entfernen 
+    //$wp_admin_bar->remove_node( 'new-post' ); // Entfernt den Menüpunkt "Neuer Beitrag"
+    $wp_admin_bar->remove_node( 'new-link' ); // Entfernt den Menüpunkt "Neuer Link"
+    //$wp_admin_bar->remove_node( 'new-media' ); // Entfernt den Menüpunkt "Neue Datei"
+    //$wp_admin_bar->remove_node( 'new-page' ); // Entfernt den Menüpunkt "Neue Seite"
+    $wp_admin_bar->remove_node( 'new-user' ); // Entfernt den Menüpunkt "Neuer Benutzer"
+    $wp_admin_bar->remove_node( 'search' ); // Entfernt den Menüpunkt "Suche"
+    $wp_admin_bar->remove_node( 'updates' ); // Entfernt den Menüpunkt "Suche"
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>adminbar</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
